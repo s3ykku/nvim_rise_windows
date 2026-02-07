@@ -11,11 +11,17 @@ return {
 	config = function()
 		require("nvim-treesitter").setup({
 			highlight = { enable = true },
+			indent = { enable = true },
 		})
-		require("nvim-treesitter.config").setup({
-			indent = {
-				enable = true,
-			},
+
+		vim.api.nvim_create_autocmd({ "FileType", "BufEnter" }, {
+			pattern = "*",
+			callback = function()
+				vim.schedule(function()
+					vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+					vim.opt_local.smartindent = false
+				end)
+			end,
 		})
 	end,
 }

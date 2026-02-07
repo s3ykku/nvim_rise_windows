@@ -3,16 +3,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.indentexpr = ""
-vim.opt.smartindent = true
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "python",
-  callback = function()
-    vim.opt_local.indentexpr = ""   -- Обнуляем именно локально для буфера
-    vim.opt_local.smartindent = true -- Включаем старый добрый smartindent
-  end,
-})
+vim.opt.smartindent = false
 
 vim.opt.clipboard = "unnamedplus"
 
