@@ -2,7 +2,7 @@ RU:
 
 Для того, чтобы установить nvim с этой конфигурацией на windows, необходимы выполнить следующие действия:
 
-1. Установить git, curl, tar, git, ripgrep, neovim в систему (желательно через scoop).
+1. Установить git, curl, tar, git, ripgrep, neovim, win32yank в систему (желательно через scoop).
 2. Установить treecitter-cli командой "npm install tree-sitter-cli" (необходмо иметь установленный NodeJS).
 3. Положить папку bin в любое место и прописать полный путь этой папки в PATH (например "C:\tools\bin"), переместить эту папку в самый верх списка.
 4. Скопировать содержимое папки "nvim_config" в папку "C:\Users\"User"\AppData\Local\nvim".
@@ -17,7 +17,7 @@ EN:
 
 To install nvim with this configuration on Windows, follow these steps:
 
-1. Install git, curl, tar, git, ripgrep, and neovim on your system (preferably via scoop).
+1. Install git, curl, tar, git, ripgrep, neovim, win32yank on your system (preferably via scoop).
 2. Install treecitter-cli with "npm install tree-sitter-cli" (you must have NodeJS installed).
 3. Place the bin folder anywhere and add the full path to this folder to your PATH (e.g., "C:\tools\bin"). Move this folder to the top of the list.
 4. Copy the contents of the "nvim_config" folder to "C:\Users\"User"\AppData\Local\nvim".
