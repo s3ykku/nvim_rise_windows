@@ -4,7 +4,7 @@ RU:
 
 1. Установить git, curl, tar, git, ripgrep, neovim, win32yank в систему (желательно через scoop).
 2. Установить treecitter-cli командой "npm install tree-sitter-cli" (необходмо иметь установленный NodeJS).
-3. Положить папку bin в любое место и прописать полный путь этой папки в PATH (например "C:\tools\bin"), переместить эту папку в самый верх списка.
+3. Установить Visual Studio Build Tools (должны быть включены пункты "Средства сборки MSVC для x64/x86", "Windows 10/11 SDK". "CMake C++ tools for Windows" - по желанию).
 4. Скопировать содержимое папки "nvim_config" в папку "C:\Users\"User"\AppData\Local\nvim".
 5. В файле ./nvim_config/lua/plugins/lsp.lua, начиная с 19 строчки, отредактировать список lsp-серверов, которые вы хотите установить.
 6. Запустить neovim командой "nvim" в терминале с поддержкой аппаратной отрисовки (Windows Terminal, Alacritty, WezTerm), дождаться установки плагинов
@@ -19,7 +19,7 @@ To install nvim with this configuration on Windows, follow these steps:
 
 1. Install git, curl, tar, git, ripgrep, neovim, win32yank on your system (preferably via scoop).
 2. Install treecitter-cli with "npm install tree-sitter-cli" (you must have NodeJS installed).
-3. Place the bin folder anywhere and add the full path to this folder to your PATH (e.g., "C:\tools\bin"). Move this folder to the top of the list.
+3. Install Visual Studio Build Tools (the following items must be enabled: "MSVC Build Tools for x64/x86", "Windows 10/11 SDK". "CMake C++ tools for Windows" - optionally).
 4. Copy the contents of the "nvim_config" folder to "C:\Users\"User"\AppData\Local\nvim".
 5. In the ./nvim_config/lua/plugins/lsp.lua file, starting from line 19, edit the list of lsp servers you want to install. 6. Launch neovim with the "nvim" command in a terminal with hardware rendering support (Windows Terminal, Alacritty, WezTerm), and wait for the plugins to install.
 7. Install parsers for the required programming languages (and others, such as "markdown" and "markdown_inline") in Neovim using the "TSInstall..." command.
