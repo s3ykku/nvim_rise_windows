@@ -2,9 +2,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.color_scheme = "kanagawabones"
-config.font_size = 13
+config.font_size = 12
 
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono", { weight = 500 })
+config.font = wezterm.font("CaskaydiaCove Nerd Font Mono", { weight = "Regular" })
 config.font_rules = {
 
 	-- Bold
@@ -12,8 +12,8 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = false,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
-			weight = 700,
+			family = "CaskaydiaCove Nerd Font Mono",
+			weight = "DemiBold",
 			italic = false,
 		}),
 	},
@@ -23,8 +23,8 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
-			weight = 700,
+			family = "CaskaydiaCove Nerd Font Mono",
+			weight = "DemiBold",
 			italic = true,
 		}),
 	},
@@ -34,8 +34,8 @@ config.font_rules = {
 		intensity = "Normal",
 		italic = true,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
-			weight = 500,
+			family = "CaskaydiaCove Nerd Font Mono",
+			weight = "Regular",
 			italic = true,
 		}),
 	},
@@ -45,8 +45,8 @@ config.font_rules = {
 		intensity = "Half",
 		italic = true,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
-			weight = 300,
+			family = "CaskaydiaCove Nerd Font Mono",
+			weight = "DemiLight",
 			italic = true,
 		}),
 	},
@@ -56,8 +56,8 @@ config.font_rules = {
 		intensity = "Half",
 		italic = false,
 		font = wezterm.font({
-			family = "JetBrainsMono Nerd Font Mono",
-			weight = 300
+			family = "CaskaydiaCove Nerd Font Mono",
+			weight = "DemiLight"
 		}),
 	},
 }
